@@ -24,7 +24,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     Params param;
-    ofColor myColor; //Not sure why this is not linking to my class
+    ofColor myColor; 
     vector<Particle> p;
     ofFbo fbo;
     float history, time0, bornRate, bornCount;

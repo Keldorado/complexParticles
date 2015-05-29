@@ -65,10 +65,10 @@ void Particle::draw(ofColor _myColor){
 
 ofVec3f Particle::randomPointInCircle( float maxRad){ //this function makes random positions inside of a radius
     ofVec3f pnt; //the key is the resulting random positions form a circle rather than a square
-    float rad = ofRandom(maxRad);
-    float angle = ofRandom(M_TWO_PI);
-    pnt.x = cos(angle)*rad;
-    pnt.y = sin(angle)*rad;
-    pnt.z = 0;
-    return pnt;
+    float rad = ofRandom(maxRad); //gives randomness to the raidus
+    float angle = ofRandom(M_TWO_PI); //gives randomness to the angles
+    pnt.x = cos(angle)*rad; //point x
+    pnt.y = sin(angle)*rad; //point y
+    pnt.z = 0; //point z
+    return pnt; //returns the point
 }
